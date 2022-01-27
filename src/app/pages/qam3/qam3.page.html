@@ -1,0 +1,67 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title color="dark">Aplikasi Pelaporan Cuaca</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="form">
+    <form [formGroup]="inputForm">
+      <div class="item">
+        <div class="titel">Time of The Observation</div>
+        <div class="input">
+          <ion-input formControlName="q3"></ion-input>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('7')">7</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('8')">8</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('9')">9</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('4')">4</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('5')">5</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('6')">6</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('1')">1</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('2')">2</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('3')">3</ion-button>
+      </div>
+      <div class="col4"></div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('0')">0</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('Z')">Z</ion-button>
+      </div>
+    </div>
+    
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="row">
+    <div class="col5">
+      <ion-button expand="full" color="danger" routerLink="/"><ion-icon name="arrow-back-outline"></ion-icon> Back</ion-button>
+    </div>
+    <div class="col2"></div>
+    <div class="col5">
+      <ion-button expand="full" color="danger" (click)="simpan()">Next <ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </div>
+  </div>
+</ion-footer>

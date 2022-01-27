@@ -1,0 +1,76 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title color="dark">Aplikasi Pelaporan Cuaca</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="form">
+    <form [formGroup]="inputForm">
+      <div class="item">
+        <div class="titel">Present Weather</div>
+        <div class="input">
+          <ion-input formControlName="nama"></ion-input>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col4">
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('NIL')">NIL</ion-button>
+      </div>
+      <div class="col4">
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('FBL')">FBL</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('MOD')">MOD</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('HVY')">HVY</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('VC')">VC</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('SH')">SH</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('TS')">TS</ion-button>
+      </div>
+      <div class="col2">
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('DZ')">DZ</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('RA')">RA</ion-button>
+      </div>
+      <div class="col2">
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('BR')">BR</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('FG')">FG</ion-button>
+      </div>
+      <div class="col4">
+        <ion-button expand="full" size="large" color="def" (click)="tes('HZ')">HZ</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="row">
+    <div class="col5">
+      <ion-button expand="full" color="danger" routerLink="/qam5"><ion-icon name="arrow-back-outline"></ion-icon> Back</ion-button>
+    </div>
+    <div class="col2"></div>
+    <div class="col5">
+      <ion-button expand="full" color="danger" (click)="simpan()">Next <ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </div>
+  </div>
+</ion-footer>

@@ -1,0 +1,35 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title color="dark">Aplikasi Pelaporan Cuaca</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="form">
+    <form [formGroup]="inputForm">
+      <div class="item">
+        <div class="titel">Supplementary Information</div>
+        <div class="input">
+          <ion-input (ionChange)="tes($event.target.value)" formControlName="nama"></ion-input>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col12">
+        <ion-button expand="full" size="large" color="def" (click)="tes('-')" >-</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="row">
+    <div class="col5">
+      <ion-button expand="full" color="danger" routerLink="/qam12"><ion-icon name="arrow-back-outline"></ion-icon> Back</ion-button>
+    </div>
+    <div class="col2"></div>
+    <div class="col5">
+      <ion-button expand="full" color="danger" (click)="simpan()">Next <ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </div>
+  </div>
+</ion-footer>
